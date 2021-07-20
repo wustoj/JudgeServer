@@ -1,8 +1,9 @@
 #!/bin/bash
 rm -rf /judger/*
-mkdir -p /judger/run /judger/spj
+mkdir -p /judger/run /judger/spj /judger/go
 
 chown compiler:code /judger/run
+chmod 777 /judger/go
 chmod 711 /judger/run
 
 chown compiler:spj /judger/spj
